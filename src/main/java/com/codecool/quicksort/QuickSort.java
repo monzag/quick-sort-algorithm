@@ -43,4 +43,9 @@ public class QuickSort {
         }
     }
 
+    private void exchange(List<Integer> toSort, int i, int j){
+        Integer temp = toSort.get(i);
+        toSort.set(i, toSort.get(j));
+        toSort.set(j, temp);
+    }
 }
